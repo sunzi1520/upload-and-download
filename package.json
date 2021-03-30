@@ -1,0 +1,27 @@
+{
+  "name": "upload-and-download",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"No test specifed\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunzi1520/upload-and-download.git"
+  },
+  "author": "Duy Thai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunzi1520/upload-and-download/issues"
+  },
+  "homepage": "https://github.com/sunzi1520/upload-and-download#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "lodash": "^4.17.21",
+    "morgan": "^1.10.0"
+  }
+}
