@@ -61,10 +61,17 @@ async function deleteFile(req, res, next) {
 
     const file = await DeleteFile(fileId, serviceLocator);
 
-    res.send({
-        status: true,
-        deletedFile: serviceLocator.fileSerializer.serialize(file)
-    })
+    if (file) {
+        res.send({
+            status: true,
+            deletedFile: serviceLocator.fileSerializer.serialize(file)
+        })
+    } else {
+        res.send({
+            status: false,
+            deletedFile: null
+        })
+    }
 }
 
 async function downloadFile(req, res, next) {

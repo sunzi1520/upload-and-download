@@ -3,11 +3,13 @@
 const constants = require('./constants');
 const config = require('./index');
 const FileSerializer = require('../../interface/serializers/FileSerializer');
+const FileSystem = require('fs');
 
 function buildBeans() {
 
   const beans = {
-    fileSerializer: new FileSerializer()
+    fileSerializer: new FileSerializer(),
+    fileSystem: FileSystem
   };
 
   if (config.database.dialect === constants.SUPPORTED_DATABASE.IN_MEMORY) {
