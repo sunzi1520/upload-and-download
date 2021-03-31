@@ -9,7 +9,7 @@ module.exports = (() => {
         },
         database: {
             dialect: process.env.DATABASE_DIALECT || constants.SUPPORTED_DATABASE.MONGO,
-            uri: process.env.DATABASE_URI || ''
+            uri: process.env.DATABASE_URI || 'mongodb://localhost:27017/magazine-test'
         }
     };
 
